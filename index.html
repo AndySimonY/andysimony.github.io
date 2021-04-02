@@ -1,0 +1,48 @@
+<!doctype html>
+
+<head>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Simple Interest Calculator</title>
+</head>
+
+<body>
+    <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <div class="content">
+            <span style="padding-right: 14%;">Amount</span> <input  type="number" id="principal"> <br />
+            <span style="padding-right: 19.1%;">Rate</span> 
+            <input onchange="range()" type="range" min="1" max="20" value="10.25" step="0.25"
+                id="rate">
+            <span for="rate" id="forRange">10.25 %</span>
+            <br />
+            <div class="year">
+                <span style="  padding-right: 11.5%;"> No of years </span> <select name="years" id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div><br />
+
+        </div>
+        <div class="complete">
+            <button onclick="compute()">Compute Interest</button>
+            <span class="res" id='result'></span>
+        </div>
+        <div class="footer">
+            <footer>© All rights reserved</footer>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
